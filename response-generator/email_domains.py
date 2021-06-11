@@ -1,0 +1,12 @@
+EMAIL_DOMAINS = [ "@gmail.com",
+"@yahoo.com",
+"@wp.pl",
+"@pw.edu.pl",
+"@o2.pl",
+"@wp.pl",
+"@vp.pl",
+"@poczta.onet.pl",
+"@yandex.ru",
+"@gov.pl",
+"@interia.pl",
+"@januszex.eu"]
