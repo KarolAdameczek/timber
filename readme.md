@@ -1,10 +1,10 @@
-# Timber - machine learning based dating app
+# Timber - Wirtualna swatka – wybór najlepszego partnera
 
 ![](diagram.png)
 
-Flutter app and React website functionalities:
+Zakres pracy:
 
-* Signing in, signing up, account management,
-* Personality and dating preferences survey,
-* Displaying matched personalities,
-* Direct messages,
+* aplikacja webowa jako interfejs dla użytkownika,
+* aplikacja mobilna na Androida/iOS,
+* analiza istotności cech doboru partnera,
+* wytrenowanie modelu oceniającego szanse na udany związek.
