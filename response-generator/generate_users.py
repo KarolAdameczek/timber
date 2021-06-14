@@ -47,7 +47,7 @@ def generate_user(id):
     shuffle(drag_and_drop)
     drag_and_drop = ",".join(drag_and_drop)
 
-    love_type = str(choice(range(1,7)))
+    love_type = str(choice(range(6)))
 
     survey, personality = generate_survey_responses()
 
@@ -72,6 +72,13 @@ def generate_survey_responses():
         resp[str(id)] = get_answer(id, personality)
     return resp, personality
 
+def get_answer(q_id, personality):
+    q_personality = QUESTION_PERSONALITY[q_id]
+    if q_personality in personality:
+        return choices([1, 2, 3, 4, 5], WEIGHTS['P'])[0]
+    else:
+        return choices([1, 2, 3, 4, 5], WEIGHTS['N'])[0]
+
 def get_random_personality():
     personality = []
     for i in range(0, 4):
@@ -84,12 +91,6 @@ def get_random_personality():
     personality_string = ''.join(personality_string)
     return personality_string
 
-def get_answer(q_id, personality):
-    q_personality = QUESTION_PERSONALITY[q_id]
-    if q_personality in personality:
-        return choices([1, 2, 3, 4, 5], WEIGHTS['P'])[0]
-    else:
-        return choices([1, 2, 3, 4, 5], WEIGHTS['N'])[0]
 
 if __name__ == "__main__":
     
